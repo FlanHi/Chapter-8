@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-4">
+            <!-- Empty Column -->
+        </div>
+        <div class="col-md-4">
+            <form action="" method="post" novalidate>
+                {{ form.hidden_tag() }}
+            <p>
+                {{ form.pro_name.label }} <br>
+                {{ form.pro_name (size=32) }}
+            </p>
+            <p>
+                {{ form.pro_desc. label }}<br>
+                {{ form.pro_desc(size=32) }}
+            </p>
+            <p>
+                {{ form.stock. label }}<br>
+                {{ form.stock }}
+            </p>
+            <br>
+
+            <p>
+                {{ form.submit() }}
+            </p>
+            </form>
+            </div>
+            <div class="col-md-4">
+                <!-- Empty Column -->
+            </div>
+    </div>
+
+{% endblock %}
